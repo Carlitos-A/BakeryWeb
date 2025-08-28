@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--Esto hace que no se deba subir o bajar con la ruedita-->
+
+<body class="h-[100dvh] grid grid-rows-[auto_1fr_auto] overflow-hidden">
+
+    <!--Navbar de registro -->
+    <div class="navbar bg-secondary shadow-sm navbar-blur">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-color rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a>Catálogo</a></li>
+                    <li><a>Contáctanos</a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/iconon.png" height="10" width="100" alt="">
+            </a>
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Inicio</a></li>
+                <LI><a>Catálogo</a></LI>
+                <li><a>Contáctanos</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="register.html" class="btn btn-neutral-content btn-outline">Registrarse</a>
+        </div>
+    </div>
+
+
+    <!-- Hero / Inicio de página -->
+    <div class="hero h-full row-start-2" style="background-image: url(assets/img/pasteleriaoutside.jpg);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+
+            <div class="max-w-md">
+                <!-- Titulo registro -->
+                <h1 class="mb-5 text-5xl font-bold">Iniciar sesión</h1>
+                <!-- Parámetros de registro -->
+                <div>
+                    <!--Correo-->
+                    <h1 class="text-1xl font-bold">Correo electrónico</h1>
+                    <div>
+                        <label class="input validator input-color">
+                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                    stroke="currentColor">
+                                    <rect width="20" height="16" x="3" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </g>
+                            </svg>
+                            <input type="email" placeholder="mail@site.com" required />
+                        </label>
+                        <div class="validator-hint hidden">Introduzca correo válido</div>
+                        <!--Separador de lo que sigue-->
+                        <div class="mb-2"></div>
+                    </div>
+
+                    <!--Contraseña-->
+                    <h1 class="text-1xl font-bold">Contraseña</h1>
+                    <label class="input validator input-color">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <path
+                                    d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
+                                </path>
+                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            </g>
+                        </svg>
+                        <!--Regex para validar que la contraseña esta bien escrita (Hecho automaticamente por DaisyUI)-->
+                        <input type="contraseña" required placeholder="Contraseña" minlength="6"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                            title="Debe contener mas de 6 carácteres, including number, lowercase letter, uppercase letter" />
+                    </label>
+                    <p class="validator-hint hidden">
+                        Debe contener mas de 6 carácteres, incluyendo
+                        <br />Al menos un numero <br />Al menos una letra minuscula <br />al menos una letra mayúscula
+                    </p>
+
+                    <!--Separador de lo que sigue-->
+                    <div class="mb-10"></div>
+
+                </div>
+                <!-- Botón de registro -->
+                <button class="btn btn-neutral-content btn-outline">Iniciar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer sm:footer-horizontal footer-center bg-primary text-base-content p-4">
+        <aside>
+            <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+</body>
+
+
+
+</html>

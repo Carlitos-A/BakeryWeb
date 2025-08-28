@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--Esto hace que no se deba subir o bajar con la ruedita-->
+
+<body class="h-[100dvh] grid grid-rows-[auto_1fr_auto] overflow-hidden">
+
+  <!--Navbar de registro -->
+  <div class="navbar bg-secondary shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-color rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a href="#">Inicio</a></li>
+          <li><a>Catálogo</a></li>
+          <li><a>Contáctanos</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/iconon.png" height="10" width="100" alt="">
+      </a>
+
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Inicio</a></li>
+        <LI><a>Catálogo</a></LI>
+        <li><a>Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a class="btn btn-neutral-content btn-outline">Iniciar Sesión</a>
+    </div>
+  </div>
+
+
+  <!-- Hero / Inicio de página -->
+  <div class="hero h-full row-start-2" style="background-image: url(assets/img/bakerysimpleinside.jpg);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold text-5xl-animation color">Mil sabores en un solo lugar</h1>
+        <p class="mb-5 subtitle-animation color">
+          Disfruta de pasteles, tortas y panes recién horneados, elaborados con ingredientes frescos y mucho amor. Haz tu pedido online y recíbelo en la comodidad de tu hogar
+        </p>
+        <a href="register.html" class="btn btn-neutral-content btn-outline btn-animation">
+          Registrarse
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer sm:footer-horizontal footer-center bg-primary text-base-content p-4">
+    <aside>
+      <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
+    </aside>
+  </footer>
+
+</body>
+
+</html>
