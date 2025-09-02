@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--Esto hace que no se deba subir o bajar con la ruedita-->
+
+<body class="h-[100dvh] grid grid-rows-[auto_1fr_auto] overflow-hidden">
+
+  <header id="header" data-btn-text="Iniciar Sesión" data-btn-ahref="login.html">
+    <!--Navbar de registro -->
+    <script src="js/components/header.js"></script>
+
+  </header>
+
+
+
+  <!-- Hero / Inicio de página -->
+  <div class="hero h-full row-start-2" style="background-image: url(assets/img/fondo/bakerysimpleinside.jpg);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold text-5xl-animation color">Mil sabores en un solo lugar</h1>
+        <p class="mb-5 subtitle-animation color">
+          Disfruta de pasteles, tortas y panes recién horneados, elaborados con ingredientes frescos y mucho amor. Haz
+          tu pedido online y recíbelo en la comodidad de tu hogar
+        </p>
+        <a href="register.html" class="btn btn-neutral-content btn-outline btn-animation">
+          Registrarse
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer id="footer">
+    <script src="js/components/footer.js"></script>
+  </footer>
+
+</body>
+
+</html>
+
+
+

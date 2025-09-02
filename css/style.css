@@ -8,11 +8,19 @@
 }
 
 
-@keyframes movimiento-letras{
+@keyframes movimiento{
 
     0%
     {
         transform: translateX(-1000px);
+    }
+
+}
+@keyframes movimiento-invert{
+
+    0%
+    {
+        transform: translateX(1000px);
     }
 
 }
@@ -57,17 +65,31 @@
     font-size: 50px;
     font-weight: bold;
     position: relative;
-    animation:      movimiento-letras 1s;
+    animation:      movimiento 1s;
 } 
 
 .subtitle-animation {
-    animation:      movimiento-letras 2s;
+    animation:      movimiento 2s;
 }
 
 .btn-animation {
-    animation:      movimiento-letras 3s;
+    animation:      movimiento 3s;
 }
 
 .input {
     color: rgb(0, 0, 0);
+}
+
+.card-animation {
+    animation:      movimiento 1s;
+}
+
+.invert-card-animation {
+    animation:      movimiento-invert 1s ;
+}
+
+.btn-hover:hover {
+    background-color:   var(--bg-primary);
+    color:              var(--text-primary);
+    border-color:       var(--text-primary);
 }

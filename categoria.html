@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- lo ideal seria usar esta pagina como plantilla para realizar las demas paginas dentro de las categorias-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<!--Esto hace que no se deba subir o bajar con la ruedita-->
+
+<!--La propiedad overflow-hidden oculta las barras desplazadoras, esto hace que al necesitarlas (Pantalla pequeñas) 
+no podamos desplazarnos, al retirar este parámetro el propio navegador gestiona la aparicion de las barras navegadoras o 
+de desplazamiento (Pantalla grande = No necesario / Pantalla pequeña = Necesario)-->
+
+<body class="h-[100dvh] grid grid-rows-[auto_1fr_auto]">
+
+    <body>
+
+        <!--Navbar de bootstrap-->
+        <header id="header" data-btn-visible=false>
+            <!--Navbar de registro -->
+            <script src="js/components/header.js"></script>
+
+
+        </header>
+
+        <!--Contenido principal de la página-->
+        
+        <!--Catálogo de productos traido desde JS/Utils-->
+        <script src="js/utils/categorias/categorias.js" type="module"></script>
+        
+        <main class="row-start-2 relative h-full">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('assets/img/fondo/aestheticpasteleriainside.jpg');"></div>
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div class="relative z-10 container mx-auto p-10 overflow-auto flex flex-col items-center justify-center min-h-[80vh]">
+                <h1 class="text-4xl font-bold mb-6 text-center text-white">Catálogo de Productos</h1>
+                <div id="producto" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <script src="js/components/footer.js"></script>
+        </footer>
+
+    </body>
+
+</body>
+
+</html>

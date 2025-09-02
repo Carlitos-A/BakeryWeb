@@ -10,50 +10,24 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    
+
 </head>
 
 <!--Esto hace que no se deba subir o bajar con la ruedita-->
 
 <body class="h-[100dvh] grid grid-rows-[auto_1fr_auto] overflow-hidden">
 
-    <!--Navbar de registro -->
-    <div class="navbar bg-secondary shadow-sm navbar-blur">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-color rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a>Catálogo</a></li>
-                    <li><a>Contáctanos</a></li>
-                </ul>
-            </div>
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/iconon.png" height="10" width="100" alt="">
-            </a>
 
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="index.html">Inicio</a></li>
-                <LI><a>Catálogo</a></LI>
-                <li><a>Contáctanos</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a href="login.html" class="btn btn-neutral-content btn-outline">Iniciar Sesión</a>
-        </div>
-    </div>
+    <!--Navbar de bootstrap-->
+    <header id="header" data-btn-text="Iniciar Sesión" data-btn-ahref="login.html">
+        <!--Navbar de registro -->
+        <script src="js/components/header.js"></script>
 
+
+    </header>
 
     <!-- Hero / Inicio de página -->
-    <div class="hero h-full row-start-2" style="background-image: url(assets/img/pasteleriaoutside.jpg);">
+    <div class="hero h-full row-start-2" style="background-image: url(assets/img/fondo/pasteleriaoutside.jpg);">
         <div class="hero-overlay"></div>
         <div class="hero-content text-neutral-content text-center">
 
@@ -73,8 +47,9 @@
 
                         <h1 class="text-1xl font-bold">Nombre de usuario</h1>
                         <label class="input validator input-color">
-                            <input id ="usuario" type="text" required placeholder="Nombre de usuario" pattern="[A-Za-z][A-Za-z0-9\-]*"
-                                minlength="3" maxlength="30" title="Solo letras, números o guión" />
+                            <input id="usuario" type="text" required placeholder="Nombre de usuario"
+                                pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30"
+                                title="Solo letras, números o guión" />
                         </label>
                         <p class="validator-hint hidden">
                             Must be 3 to 30 characters
@@ -95,7 +70,7 @@
                                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                 </g>
                             </svg>
-                            <input id ="correo" type="email" placeholder="mail@site.com" required />
+                            <input id="correo" type="email" placeholder="mail@site.com" required />
                         </label>
                         <div class="validator-hint hidden">Introduzca correo válido</div>
                         <!--Separador de lo que sigue-->
@@ -115,7 +90,7 @@
                             </g>
                         </svg>
                         <!--Regex para validar que la contraseña esta bien escrita (Hecho automaticamente por DaisyUI)-->
-                        <input id ="contraseña" type="password" required placeholder="Contraseña" minlength="6"
+                        <input id="contrasena" type="password" required placeholder="Contraseña" minlength="6"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                             title="Debe contener mas de 6 carácteres, including number, lowercase letter, uppercase letter" />
                     </label>
@@ -139,7 +114,7 @@
                                 <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                             </g>
                         </svg>
-                        <input id ="confirmarcontraseña" type="password" required placeholder="Confirmar contraseña" id="confirm-password"
+                        <input id="confirmarcontraseña" type="password" required placeholder="Confirmar contraseña"
                             minlength="6" />
                     </label>
                     <div class="validator-hint hidden" id="confirm-password-hint">
@@ -151,16 +126,15 @@
 
                 </div>
                 <!-- Botón de registro -->
-                <button class="btn btn-neutral-content btn-outline" id="botonregistrarse">Registrarse</button>
+                <button id ="btnRegister" class="btn btn-neutral-content btn-outline">Registrarse</button>
             </div>
         </div>
     </div>
+    <script src="js/utils/register.js"></script>
 
     <!-- Footer -->
-    <footer class="footer sm:footer-horizontal footer-center bg-primary text-base-content p-4">
-        <aside>
-            <p>Copyright © 2025 - All right reserved by ACME Industries Ltd</p>
-        </aside>
+    <footer id="footer">
+        <script src="js/components/footer.js"></script>
     </footer>
 
 </body>
