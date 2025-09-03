@@ -22,39 +22,44 @@ de desplazamiento (Pantalla grande = No necesario / Pantalla pequeña = Necesari
 
 <body class="h-[100dvh] grid grid-rows-[auto_1fr_auto]">
 
-    <body>
 
-        <!--Navbar de bootstrap-->
-        <header id="header" data-btn-visible=false>
-            <!--Navbar de registro -->
-            <script src="js/components/header.js"></script>
+    <!--Navbar de bootstrap-->
+    <header id="header" data-btn-visible=false>
+        <!--Navbar de registro -->
+        <script src="js/components/header.js"></script>
 
 
-        </header>
+    </header>
 
-        <!--Contenido principal de la página-->
-        
-        <!--Catálogo de productos traido desde JS/Utils-->
-        <script src="js/utils/categorias/categorias.js" type="module"></script>
-        
-        <main class="row-start-2 relative h-full">
-            <div class="absolute inset-0 bg-cover bg-center"
-                style="background-image: url('assets/img/fondo/aestheticpasteleriainside.jpg');"></div>
-            <div class="absolute inset-0 bg-black/30"></div>
+    <!--Contenido principal de la página-->
 
-            <div class="relative z-10 container mx-auto p-10 overflow-auto flex flex-col items-center justify-center min-h-[80vh]">
-                <h1 class="text-4xl font-bold mb-6 text-center text-white">Catálogo de Productos</h1>
-                <div id="producto" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                </div>
+
+
+    <main class="row-start-2 relative h-full">
+        <div class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('assets/img/fondo/aestheticpasteleriainside.jpg');"></div>
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div
+            class="relative z-10 container mx-auto p-10 overflow-auto flex flex-col items-center justify-center min-h-[80vh]">
+            <h1 class="text-4xl font-bold mb-6 text-center text-white">Catálogo de Productos</h1>
+            <div id="producto" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <script src="js/components/footer.js"></script>
-        </footer>
+    <!--Catálogo de productos traido desde JS/Utils-->
+    <script src="js/components/mostrarProductos.js" defer></script>
+    <script src="js/utils/categorias/categorias.js" defer></script>
 
-    </body>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <script src="js/components/footer.js"></script>
+    </footer>
+
+
 
 </body>
 

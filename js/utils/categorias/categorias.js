@@ -1,4 +1,3 @@
-import {mostrarProductos} from "../../components/mostrarProductos.js";
 
 let productos = [
     {
