@@ -2,9 +2,10 @@
 :root{
     /*--bg-primary: #b47e57;*/
     /*--bg-primary: #FFC0CB;*/
-    --bg-primary: #FFF5E1;
+    /*--bg-primary: #FFF5E1;*/
     --bg-secondary: white;
-    --text-primary: #b47e57;
+    --text-primary: #8B4513;
+    --background:     ;
 }
 
 
@@ -92,4 +93,14 @@
     background-color:   var(--bg-primary);
     color:              var(--text-primary);
     border-color:       var(--text-primary);
+}
+
+body{
+    background-color: #FFF5E1;
+    color: #5D4037;
+    font-family: "lato",sans-serif; 
+}
+
+.color{
+    
 }
