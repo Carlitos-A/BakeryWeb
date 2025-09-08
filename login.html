@@ -1,93 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!--Esto hace que no se deba subir o bajar con la ruedita-->
+<body class="d-flex flex-column min-vh-100">
 
-<body class="h-[100dvh] grid grid-rows-[auto_1fr_auto] overflow-hidden">
+  <!-- Header -->
+  <header id="header" data-btn-text="Registrarse" data-btn-ahref="register.html">
+    <script src="js/components/header.js"></script>
+  </header>
 
-    <header id="header" data-btn-text="Registrarse" data-btn-ahref="register.html">
-        <!--Navbar de registro -->
-        <script src="js/components/header.js"></script>
+  <!-- Hero -->
+  <main class="flex-grow-1 d-flex align-items-center justify-content-center"
+    style="background-image: url('assets/img/fondo/pasteleriaoutside.jpg'); background-size: cover; background-position: center;">
 
-    </header>
+    <div class="bg-dark bg-opacity-75 p-5 rounded text-white w-100" style="max-width: 400px;">
+      <!-- Título -->
+      <h1 class="mb-4 text-center">Iniciar sesión</h1>
 
-
-    <!-- Hero / Inicio de página -->
-    <div class="hero h-full row-start-2" style="background-image: url(assets/img/fondo/pasteleriaoutside.jpg);">
-        <div class="hero-overlay"></div>
-        <div class="hero-content text-neutral-content text-center">
-
-            <div class="max-w-md">
-                <!-- Titulo registro -->
-                <h1 class="mb-5 text-5xl font-bold">Iniciar sesión</h1>
-                <!-- Parámetros de registro -->
-                <div>
-                    <!--Correo-->
-                    <h1 class="text-1xl font-bold">Correo electrónico</h1>
-                    <div>
-                        <label class="input validator input-color">
-                            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
-                                    stroke="currentColor">
-                                    <rect width="20" height="16" x="3" y="4" rx="2"></rect>
-                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </g>
-                            </svg>
-                            <input id="correo" type="email" placeholder="mail@site.com" required />
-                        </label>
-                        <div class="validator-hint hidden">Introduzca correo válido</div>
-                        <!--Separador de lo que sigue-->
-                        <div class="mb-2"></div>
-                    </div>
-
-                    <!--Contraseña-->
-                    <h1 class="text-1xl font-bold">Contraseña</h1>
-                    <label class="input validator input-color">
-                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
-                                stroke="currentColor">
-                                <path
-                                    d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
-                                </path>
-                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                            </g>
-                        </svg>
-                        <!--Regex para validar que la contraseña esta bien escrita (Hecho automaticamente por DaisyUI)-->
-                        <input id="contrasena" type="password" required placeholder="Contraseña" required/>
-                    </label>
-                    <p class="validator-hint hidden">
-                        Debe contener mas de 6 carácteres, incluyendo
-                        <br />Al menos un numero <br />Al menos una letra minuscula <br />al menos una letra mayúscula
-                    </p>
-
-                    <!--Separador de lo que sigue-->
-                    <div class="mb-10"></div>
-
-                </div>
-                <!-- Botón de registro -->
-                <button id="btnLogin" class="btn btn-neutral-content btn-outline">Iniciar sesión</button>
-            </div>
+      <!-- Formulario -->
+      <form>
+        <!-- Correo -->
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="mail@site.com" required>
+          <div class="form-text">Introduzca un correo válido</div>
         </div>
+
+        <!-- Contraseña -->
+        <div class="mb-3">
+          <label for="contrasena" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+          <div class="form-text">
+            Debe contener más de 6 caracteres, incluyendo:<br>
+            • Al menos un número<br>
+            • Al menos una letra minúscula<br>
+            • Al menos una letra mayúscula
+          </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="d-grid">
+          <button id="btnLogin" type="submit" class="btn btn-light btn-outline-dark">Iniciar sesión</button>
+        </div>
+      </form>
     </div>
-    <script src="js/utils/login.js"></script>
+  </main>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <script src="js/components/footer.js"></script>
-    </footer>
+  <!-- Footer -->
+  <footer id="footer" class="mt-auto">
+    <script src="js/components/footer.js"></script>
+  </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/utils/login.js"></script>
 </body>
-
-
 
 </html>
