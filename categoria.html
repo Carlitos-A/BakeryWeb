@@ -29,31 +29,17 @@ de desplazamiento (Pantalla grande = No necesario / Pantalla pequeña = Necesari
 
     <!--Contenido principal de la página-->
 
-
-
-    <main class="row-start-2 relative h-full">
-        <div class="absolute inset-0 bg-cover bg-center"
-            style="background-image: url('assets/img/fondo/real.jpg');"></div>
-        <div class="absolute inset-0 bg-black/30"></div>
-
-        <div
-            class="relative z-10 container mx-auto p-10 overflow-auto flex flex-col items-center justify-center min-h-[80vh]">
-            <h1 class="text-4xl font-bold mb-6 text-center text-white">Catálogo de Productos</h1>
-            <div id="producto" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            </div>
-        </div>
-    </main>
-
-    <!--Catálogo de productos traido desde JS/Utils-->
-    <script src="js/components/mostrarProductos.js" defer></script>
-    <script src="js/utils/categorias/categorias.js" defer></script>
+<section class="relative h-full">
+  <div class="container">
+    <h1 class="text-center">Catalogo de productos</h1>
+    <div id="producto" class="row"></div>
+  </div>
+</section>
 
 
 
     <!-- Footer -->
-    <footer id="footer">
-        <script src="js/components/footer.js"></script>
-    </footer>
+    <footer id="footer"> </footer>
 
 </body>
 
