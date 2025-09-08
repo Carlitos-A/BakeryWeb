@@ -232,5 +232,8 @@ body{
       margin: -100px auto 2rem auto; /* Para superponerse un poco al hero */
       max-width: 900px;
     }
-
-  
+/* Mostrar dropdown al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* elimina el pequeño espacio entre botón y menú */
+}

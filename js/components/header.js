@@ -3,7 +3,7 @@ document.getElementById("header").innerHTML = `
 <nav class="navbar navbar-expand-lg bg-customize shadow-sm position-relative">
   <div class="container-fluid">
     <!-- Marca -->
-    <a class="navbar-brand" href="lander.html">
+    <a class="navbar-brand" href="index.html">
       <img src="assets/img/icons/logoPNG2.png" alt="Logo" height="80">
     </a>
 
@@ -25,11 +25,11 @@ document.getElementById("header").innerHTML = `
           <a class="nav-link" href="categoria.html">Catálogo</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categorias
+            <a class="nav-link dropdown-toggle" href="categoria.html" role="button">
+                Catálogo
             </a>
             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="catalogoProductos.html">Todos los productos </a></li>
                 <li><a class="dropdown-item" href="#">Tortas Cuadradas </a></li>
                 <li><a class="dropdown-item" href="#">Tortas Circulares </a></li>
                 <li><a class="dropdown-item" href="#">Postres Individuales </a></li>

@@ -1,4 +1,4 @@
-function mostrarProductos(productos, contenedorproductos) {
+function mostrarProductos1(productos, contenedorproductos) {
     productos.forEach((prod) => {
         contenedorproductos.innerHTML += `
         <div class="card shadow-xl" style="background-color: #F5F5DC;">
