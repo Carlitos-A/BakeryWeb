@@ -2,7 +2,7 @@
 :root{
     /*--bg-primary: #b47e57;*/
     /*--bg-primary: #FFC0CB;*/
-    /*--bg-primary: #FFF5E1;*/
+    --bg-primary: #FFF5E1;
     --bg-secondary: white;
     --text-primary: #8B4513;
     --background:     ;
@@ -25,6 +25,11 @@
     }
 
 }
+@keyframes movimiento-carousel{
+
+}
+
+
 
 .navbar-boostrap {
     background-color:   var(--bg-primary);
@@ -54,6 +59,9 @@
 .footer {
     background-color:   var(--bg-primary);
     color:              var(--text-primary);
+}
+.text-customize{
+    color: var(--text-primary);
 }
 
 .input {
@@ -101,6 +109,16 @@ body{
     font-family: "lato",sans-serif; 
 }
 
-.color{
-    
+.card-img-top {
+  width: 100%;       /* Ocupa todo el ancho de la tarjeta */
+  height: 250px;     /* El alto que veo que se ve mejor */
+  object-fit: cover; /* Mantiene proporción y recorta la imagen ajustandola al recuadro si es necesario */
+}
+
+.card {
+  height: 100%;
+}
+
+#footer{
+    background-color: #dfd2ba;
 }
