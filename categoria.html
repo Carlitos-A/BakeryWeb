@@ -5,10 +5,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,43 +25,33 @@ de desplazamiento (Pantalla grande = No necesario / Pantalla pequeña = Necesari
 
 
     <!--Navbar de bootstrap-->
-    <header id="header" data-btn-visible=false>
-        <!--Navbar de registro -->
-        <script src="js/components/header.js"></script>
-
-
-    </header>
+    <header id="header" data-btn-visible=false> </header>
 
     <!--Contenido principal de la página-->
 
-
-
-    <main class="row-start-2 relative h-full">
-        <div class="absolute inset-0 bg-cover bg-center"
-            style="background-image: url('assets/img/fondo/real.jpg');"></div>
-        <div class="absolute inset-0 bg-black/30"></div>
-
-        <div
-            class="relative z-10 container mx-auto p-10 overflow-auto flex flex-col items-center justify-center min-h-[80vh]">
-            <h1 class="text-4xl font-bold mb-6 text-center text-white">Catálogo de Productos</h1>
-            <div id="producto" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            </div>
-        </div>
-    </main>
-
-    <!--Catálogo de productos traido desde JS/Utils-->
-    <script src="js/components/mostrarProductos.js" defer></script>
-    <script src="js/utils/categorias/categorias.js" defer></script>
+<section class="relative h-full">
+  <div class="container-fluid px-4"> <!-- px-4 agrega padding horizontal -->
+    <h1 class="text-center">Catalogo de productos</h1>
+    <div id="producto" class="row"></div>
+  </div>
+</section>
 
 
 
-    <!-- Footer -->
-    <footer id="footer">
-        <script src="js/components/footer.js"></script>
-    </footer>
 
 
+<footer>
+    <div id="footer"></div>
+</footer>
 
 </body>
+
+<script src="js/components/footer.js"></script>
+<script src="js/components/header.js"></script>
+<script src="js/components/mostrarProductos.js" defer></script>
+<script src="js/utils/categorias/categorias.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 
 </html>
