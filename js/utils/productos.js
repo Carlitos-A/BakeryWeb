@@ -25,7 +25,7 @@ let productos = [
     precio: 42000,
     descripcion: "Torta tradicional chilena con manjar y nueces, un deleite para los amantes de los sabores dulces y clásicos.",
     categoria: "Tortas Circulares",
-    imagen: "assets/img/productos/todo/bizcocho-nuez-2024.png"
+    imagen: "assets/img/productos/todo/Bizcocho-nuez-2024.png"
   },
   {
     nombre: "Mousse de Chocolate",
