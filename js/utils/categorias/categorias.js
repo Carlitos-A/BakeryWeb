@@ -58,8 +58,20 @@ let productos = [
     }
 ];
 
-
 let contenedorproductos = document.getElementById("producto");
 
-
-mostrarProductos(productos, contenedorproductos);
+productos.forEach(prod1 => {
+    contenedorproductos.innerHTML += `
+    <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <div class="card h-100">
+            <img src="${prod1.imagen}" class="card-img-top" alt="${prod1.nombre}">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">${prod1.nombre}</h5>
+                <p class="card-text">${prod1.descripcion}</p>
+                <p class="fw-bold">${prod1.precio}</p>
+                <button class="btn btn-primary mt-auto">Comprar</button>
+            </div>
+        </div>
+    </div>
+    `;
+});
