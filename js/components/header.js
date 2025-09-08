@@ -19,7 +19,7 @@ document.getElementById("header").innerHTML = `
       <!-- Menú central -->
       <ul class="navbar-nav mb-2 mb-lg-0 central-menu">
         <li class="nav-item"> 
-          <a class="nav-link" href="lander.html">Inicio</a>
+          <a class="nav-link" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="categoria.html">Catálogo</a>
