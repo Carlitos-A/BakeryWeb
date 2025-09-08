@@ -4,7 +4,7 @@ document.getElementById("header").innerHTML = `
   <div class="container-fluid">
     <!-- Marca -->
     <a class="navbar-brand" href="lander.html">
-      <img src="assets/img/icons/iconon.png" alt="Logo" height="80">
+      <img src="assets/img/icons/logoPNG2.png" alt="Logo" height="80">
     </a>
 
     <!-- Botón hamburguesa -->
@@ -18,15 +18,44 @@ document.getElementById("header").innerHTML = `
       
       <!-- Menú central -->
       <ul class="navbar-nav mb-2 mb-lg-0 central-menu">
-        <li class="nav-item">
+        <li class="nav-item"> 
           <a class="nav-link" href="lander.html">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="categoria.html">Catálogo</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="conocenos.html">Conócenos</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tortas Cuadradas </a></li>
+                <li><a class="dropdown-item" href="#">Tortas Circulares </a></li>
+                <li><a class="dropdown-item" href="#">Postres Individuales </a></li>
+                <li><a class="dropdown-item" href="#">Productos Sin Azucar </a></li>
+                <li><a class="dropdown-item" href="#">Pasteleria Tradicional </a></li>
+                <li><a class="dropdown-item" href="#">Productos Sin Gluten </a></li>
+                <li><a class="dropdown-item" href="#">Productos Veganas </a></li>
+                <li><a class="dropdown-item" href="#">Tortas Especiales </a></li>
+            </ul>
         </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sobre Nosotros
+              </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="nuestra-historia.html">Nuestra Historia</a></li>
+              <li><a class="dropdown-item" href="quienes_somos.html">Equipo </a></li>
+              <li><a class="dropdown-item" href="procesos.html">Procesos </a></li>
+              </ul>
+            </li>
+       <li class="nav-item">
+                            <a class="nav-link" href="#">Comunidad</a>
+                        </li>
+
+
       </ul>
 
       <!-- Menú derecho -->
