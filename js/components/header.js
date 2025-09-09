@@ -49,7 +49,7 @@ document.getElementById("header").innerHTML = `
               </ul>
             </li>
        <li class="nav-item">
-                            <a class="nav-link" href="#">Comunidad</a>
+                            <a class="nav-link" href="comunidad.html">Comunidad</a>
                         </li>
 
 
