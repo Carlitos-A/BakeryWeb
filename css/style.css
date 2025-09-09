@@ -3,7 +3,7 @@
     /*--bg-primary: #b47e57;*/
     /*--bg-primary: #FFC0CB;*/
     --bg-primary: #FFF5E1;
-    --bg-secondary: white;
+    --bg-secondary: #999285;
     --text-primary: #8B4513;
     --background:     ;
 }
@@ -70,7 +70,7 @@
 }
 
 .text-5xl-animation {
-    color: white;
+    color: var(--text-primary);
     font-size: 50px;
     font-weight: bold;
     position: relative;
@@ -97,11 +97,6 @@
     animation:      movimiento-invert 1s ;
 }
 
-.btn-hover:hover {
-    background-color:   var(--bg-primary);
-    color:              var(--text-primary);
-    border-color:       var(--text-primary);
-}
 
 body{
     background-color: #FFF5E1;
@@ -109,9 +104,6 @@ body{
     font-family: "lato",sans-serif; 
 }
 
-.color{
-    
-}
 .card-img-top {
   width: 100%;       /* Ocupa todo el ancho de la tarjeta */
   height: 250px;     /* El alto que veo que se ve mejor */
@@ -125,6 +117,7 @@ body{
 footer{
     background-color: #dfd2ba;
 }
+
 body{
     background-color: #FFF5E1;
     color: #5D4037;
@@ -186,7 +179,7 @@ body{
 
 @media (max-width: 768px) {
   .timeline::after {
-    display: none; /* opcional: ocultar línea en móvil */
+    display: none; /* opcional: ocultar línea en celular */
   }
 
   /* Texto arriba, imagen abajo */
@@ -236,4 +229,15 @@ body{
 .dropdown:hover .dropdown-menu {
       display: block;
       margin-top: 0; /* elimina el pequeño espacio entre botón y menú */
+}
+
+.btn-color {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s;
+}
+
+.btn-color:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }

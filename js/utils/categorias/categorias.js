@@ -69,7 +69,7 @@ productos.forEach(prod1 => {
                 <h5 class="card-title">${prod1.nombre}</h5>
                 <p class="card-text">${prod1.descripcion}</p>
                 <p class="fw-bold">${prod1.precio}</p>
-                <button class="btn btn-primary mt-auto">Comprar</button>
+                <button class="btn btn-color mt-auto">Comprar</button>
             </div>
         </div>
     </div>

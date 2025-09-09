@@ -24,34 +24,25 @@
   <main class="flex-grow-1 d-flex align-items-center justify-content-center"
     style="background-image: url('assets/img/fondo/pasteleriaoutside.jpg'); background-size: cover; background-position: center;">
 
-    <div class="bg-dark bg-opacity-75 p-5 rounded text-white w-100" style="max-width: 400px;">
-      <!-- Título -->
-      <h1 class="mb-4 text-center">Iniciar sesión</h1>
+    <div class="bg-dark bg-opacity-50 p-5 rounded text-white w-100" style="max-width: 400px;">
 
       <!-- Formulario -->
       <form>
-        <!-- Correo -->
+        <!-- Usuario -->
         <div class="mb-3">
-          <label for="correo" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="correo" placeholder="mail@site.com" required>
-          <div class="form-text">Introduzca un correo válido</div>
+          <label for="user" class="form-label">Usuario</label>
+          <input type="user" class="form-control"  id="usuario" placeholder="Usuario">
         </div>
 
         <!-- Contraseña -->
         <div class="mb-3">
           <label for="contrasena" class="form-label">Contraseña</label>
           <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
-          <div class="form-text">
-            Debe contener más de 6 caracteres, incluyendo:<br>
-            • Al menos un número<br>
-            • Al menos una letra minúscula<br>
-            • Al menos una letra mayúscula
-          </div>
         </div>
 
         <!-- Botón -->
         <div class="d-grid">
-          <button id="btnLogin" type="submit" class="btn btn-light btn-outline-dark">Iniciar sesión</button>
+          <button id="btnLogin" type="submit" class="btn btn-color btn-outline">Iniciar sesión</button>
         </div>
       </form>
     </div>
@@ -64,7 +55,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/utils/login.js"></script>
+  <script src="js/utils/validarUsuario.js"></script>
 </body>
 
 </html>

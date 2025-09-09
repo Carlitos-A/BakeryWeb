@@ -1,9 +1,9 @@
 document.getElementById("header").innerHTML = `
 
-<nav class="navbar navbar-expand-lg bg-customize shadow-sm position-relative">
+<nav class="navbar navbar-expand-lg shadow-sm position-relative">
   <div class="container-fluid">
     <!-- Marca -->
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="lander.html">
       <img src="assets/img/icons/logoPNG2.png" alt="Logo" height="80">
     </a>
 
@@ -19,10 +19,7 @@ document.getElementById("header").innerHTML = `
       <!-- Menú central -->
       <ul class="navbar-nav mb-2 mb-lg-0 central-menu">
         <li class="nav-item"> 
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="categoria.html">Catálogo</a>
+          <a class="nav-link" href="lander.html">Inicio</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="categoria.html" role="button">
@@ -67,8 +64,18 @@ document.getElementById("header").innerHTML = `
           <a class="nav-link" href="register.html">Registrarse</a>
         </li>
         <li class="nav-item d-none" id="nav-logout">
-          <a class="nav-link" href="#" id="btnLogout">Logout</a>
+          <a class="nav-link" href="" id="btnLogout">Logout</a>
         </li>
+        <li class="nav-item d-none" id="nav-edit">
+          <a class="nav-link" href="editar-perfil.html" id="btnEdit">Editar Perfil</a>
+        </li>
+        <li class="nav-item d-none" id="nav-shop">
+          <a class="nav-link position-relative" href="carrito.html">
+            <i class="bi bi-cart3" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
+
+
       </ul>
 
     </div>
@@ -76,14 +83,15 @@ document.getElementById("header").innerHTML = `
 </nav>
 `;
 
+
+
 const logueado = localStorage.getItem("logueado");
-
-// Toggle visibilidad según estado
-document.getElementById("nav-login").classList.toggle("hidden", logueado === "true");
-document.getElementById("nav-registro").classList.toggle("hidden", logueado === "true");
-document.getElementById("nav-logout").classList.toggle("hidden", logueado !== "true");
-
+document.getElementById("nav-login").classList.toggle("d-none", logueado === "true");
+document.getElementById("nav-registro").classList.toggle("d-none", logueado === "true");
+document.getElementById("nav-logout").classList.toggle("d-none", logueado !== "true");
+document.getElementById("nav-shop").classList.toggle("d-none", logueado !== "true");
+document.getElementById("nav-edit").classList.toggle("d-none", logueado !== "true");
 if (logueado === "true") {
-  const user = localStorage.getItem("usuario") || "";
-  document.querySelector("#nav-logout a").textContent = `Logout ${user}`;
+  const user = localStorage.getItem("usuario");
+  document.querySelector("#nav-logout a").textContent = `Logout ${user}`
 }
