@@ -241,3 +241,11 @@ body{
   background-color: var(--bg-secondary);
   color: var(--text-primary);
 }
+
+.comentario {
+    background-color: rgba(108, 117, 125, 0.85); 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: white; 
+}
