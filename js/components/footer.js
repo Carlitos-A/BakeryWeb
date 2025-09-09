@@ -21,7 +21,7 @@ document.getElementById("footer").innerHTML = `
 
   <!-- Copyright -->
   <div class="text-center mt-3 pt-2 border-top border-secondary">
-    <p class="mb-0 small">&copy; 2025 B&regrisso Duoc UC - Todos los derechos reservados</p>
+    <p class="mb-0 small">&copy; 2025 B2C Code - Duoc UC - Todos los derechos reservados</p>
   </div>
 </footer>
 `;
