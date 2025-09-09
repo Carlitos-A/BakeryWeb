@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const listaCategorias = document.getElementById("lista-categorias");
     const itemsCategoria = listaCategorias.querySelectorAll("li");
 
+    // OBTENER CATEGORÍA DE LA URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoriaURL = urlParams.get('categoria');
+
     function mostrarProductos(productosFiltrados) {
         contenedorproductos.innerHTML = "";
         if (productosFiltrados.length === 0) {
@@ -50,6 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Mostrar todos los productos al cargar
-    mostrarProductos(productos);
+    // AL CARGAR: Verificar si hay categoría en URL
+    if (categoriaURL) {
+        // Encontrar y activar el item correspondiente
+        const categoriaItem = Array.from(itemsCategoria).find(item => 
+            item.dataset.categoria === categoriaURL
+        );
+        
+        if (categoriaItem) {
+            itemsCategoria.forEach(li => li.classList.remove("active"));
+            categoriaItem.classList.add("active");
+            filtrarPorCategoria(categoriaURL);
+        } else {
+            // Si no encuentra la categoría, mostrar todos
+            mostrarProductos(productos);
+        }
+    } else {
+        // Mostrar todos los productos si no hay categoría en URL
+        mostrarProductos(productos);
+    }
 });

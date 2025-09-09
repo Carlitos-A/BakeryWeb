@@ -25,17 +25,18 @@ document.getElementById("header").innerHTML = `
             <a class="nav-link dropdown-toggle" href="categoria.html" role="button">
                 Catálogo
             </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="catalogoProductos.html">Todos los productos </a></li>
-                <li><a class="dropdown-item" href="#">Tortas Cuadradas </a></li>
-                <li><a class="dropdown-item" href="#">Tortas Circulares </a></li>
-                <li><a class="dropdown-item" href="#">Postres Individuales </a></li>
-                <li><a class="dropdown-item" href="#">Productos Sin Azucar </a></li>
-                <li><a class="dropdown-item" href="#">Pasteleria Tradicional </a></li>
-                <li><a class="dropdown-item" href="#">Productos Sin Gluten </a></li>
-                <li><a class="dropdown-item" href="#">Productos Veganas </a></li>
-                <li><a class="dropdown-item" href="#">Tortas Especiales </a></li>
-            </ul>
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="catalogoProductos.html">Todos los productos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Tortas Cuadradas">Tortas Cuadradas</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Tortas Circulares">Tortas Circulares</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Postres Individuales">Postres Individuales</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Productos Sin Azúcar">Productos Sin Azúcar</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Pastelería Tradicional">Pastelería Tradicional</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Productos Sin Gluten">Productos Sin Gluten</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Productos Vegana">Productos Veganos</a></li>
+            <li><a class="dropdown-item" href="catalogoProductos.html?categoria=Tortas Especiales">Tortas Especiales</a></li>
+          </ul>
         </li>
          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
